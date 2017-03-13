@@ -1,106 +1,180 @@
-/* Layout */
-
-body {
-	background-color: #f0810f;
-}
-
-p a {
-	color: #011a27;
-	font-size: 22px;
-	font-weight: 100;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-p a:hover {
-	color: white;
-	text-decoration: none;
-}
-
-button {
-	height: 400px;
-	border: none;
-	padding: 25px;
-	background-color: transparent;
-}
-
-button img {
-	width: 75%;
-	transition: all 0.3s ease 0s;
-}
-
-button:hover img{
-	width: 100%;
-	transition: all 0.3s ease 0s;
-}
-
-button input {
-	display: none;
-}
-
-
-footer {
-	color: #011a27;
-	font-size: 12px;
-	font-weight: 100;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-.container {
-	max-width: 1000px;
-}
-
 /* Navbar */
 
-.navbar-fixed-top {
-	height: 50px;
-	background-color: transparent;
+.navbar {
+	border-color: #57BC90;
 }
 
-ul.nav.navbar-nav.navbar-right li a{
-	color: #063952;
+#bs-example-navbar-collapse-1 ul.navbar-nav li.active a {
+	color: #0F1626;
+}
+
+#bs-example-navbar-collapse-1 ul.navbar-nav li a:hover {
+	color: #0F1626;
+}
+
+img.language {
+	width: 18px;
+	height: 18px;
+}
+
+a:hover img.language {
+	border-radius: 100%;
+	box-shadow: 0px 0px 4px #57BC90;
+}
+
+
+/* Logo */
+
+a#logo.navbar-brand {
+	color: #0F1626;
+	margin-top: -6px;
+	margin-bottom: -4px;
+	padding-bottom: 0;
 	font-size: 22px;
+	font-weight: 700;
+}
+
+@media(max-width:767px) {
+    a#logo.navbar-brand {
+        margin-top: 0;
+		margin-bottom: 0;
+    }
+}
+
+p#slogan {
+	color: #57BC90;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
 	font-weight: 100;
 	text-transform: uppercase;
+	letter-spacing: .42em;
+	line-height: 0;
 }
 
-ul.nav.navbar-nav.navbar-right li a:hover{
-	color: white;
-	background-color: transparent;
+@media(max-width:767px) {
+    p#slogan {
+        display: none;
+    }
 }
 
-/* Navbar-brand */
+/* Header */
 
-.navbar-brand {
-	color: #063952;
-	font-size: 22px;
-	font-weight: 100;
-	text-transform: uppercase;
-}
-
-a:hover.navbar-brand {
-	color: white;
-}
-
-/* Jumbotron */
-
-.jumbotron {
-	height: 400px;
-	margin: 100px;
-	background-color: transparent;
+.intro-message {
+	width: 50%;
 	text-align: center;
 }
 
-/* Form */
-
-.form-group label {
-	margin-top: 25px;
-	text-transform: uppercase;
+.intro-message h1 {
+	color: white;
+	font-size: 100px;
+	font-family: 'Mrs Saint Delafield', cursive;
 }
 
-.form-control {
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
+@media(max-width:1199px) {
+    .intro-message h1 {
+        font-size: 64px;
+    }
+}
+
+@media(max-width:767px) {
+    .intro-message h1 {
+        font-size: 36px;
+    }
+}
+
+.intro-message h3 {
+	color: #0F1626;
+	font-size: 18px;
+	text-shadow: none;
+}
+
+@media(max-width:1199px) {
+    .intro-message h3 {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:767px) {
+    .intro-message h3 {
+        display: none;
+    }
+}
+
+p.intro-icon {
+	padding-top: 35px;
+	color: #0F1626;
+	font-size: 48px;
+}
+
+/* Features */
+
+.content-section-a {
+	background-color: #57BC90;
+}
+
+.heading-section-a {
+	color: white;
+}
+
+p.lead {
+	text-align: justify;
+}
+
+p.lead-section-a a {
+	color: white;
+}
+
+@media(max-width:767px) {
+    p.lead-section-a {
+        text-align: center;
+    }
+}
+
+img.img-profile {
+	border-radius: 100%;
+	}
+
+@media(max-width:1199px) {
+    img.img-profile {
+        margin-top: 70px;
+        padding-right: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    img.img-profile {
+        display: none;
+    }
+}
+
+p.feature-icon {
+	margin-bottom: 0;
+	color: #0F1626;
+	font-size: 48px;
+}
+
+@media(max-width:767px) {
+    p.feature-icon {
+        text-align: center;
+    }
+}
+
+/* Footer */
+
+footer {
+	background-color: #015249;
+}
+
+footer ul li a {
+	color: #0F1626;
+}
+
+footer ul li a:hover {
+	color: white;
+}
+
+footer p.copyright {
+	color: white;
 }
